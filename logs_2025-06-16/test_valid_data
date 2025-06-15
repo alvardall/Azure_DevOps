@@ -1,0 +1,28 @@
+2025-06-16 01:00:16,097 - INFO - test_valid_data is started
+2025-06-16 01:00:23,063 - INFO - https://www.6pm.com/ is opened.
+2025-06-16 01:00:23,184 - ERROR - Element is not vissible.
+2025-06-16 01:00:23,217 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7169bfe75+79173]
+	GetHandleVerifier [0x0x7ff7169bfed0+79264]
+	(No symbol) [0x0x7ff716779e5a]
+	(No symbol) [0x0x7ff7167520f1]
+	(No symbol) [0x0x7ff71680017e]
+	(No symbol) [0x0x7ff716820922]
+	(No symbol) [0x0x7ff7167f8743]
+	(No symbol) [0x0x7ff7167c14c1]
+	(No symbol) [0x0x7ff7167c2253]
+	GetHandleVerifier [0x0x7ff716c8a2ad+3004797]
+	GetHandleVerifier [0x0x7ff716c846fd+2981325]
+	GetHandleVerifier [0x0x7ff716ca3350+3107360]
+	GetHandleVerifier [0x0x7ff7169da9fe+188622]
+	GetHandleVerifier [0x0x7ff7169e228f+219487]
+	GetHandleVerifier [0x0x7ff7169c8dc4+115860]
+	GetHandleVerifier [0x0x7ff7169c8f79+116297]
+	GetHandleVerifier [0x0x7ff7169af528+11256]
+	BaseThreadInitThunk [0x0x7ffd5ae67344+20]
+	RtlUserThreadStart [0x0x7ffd5c0626b1+33]
+
+2025-06-16 01:00:23,766 - INFO - test_valid_data is finished
