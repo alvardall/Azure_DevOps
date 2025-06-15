@@ -14,10 +14,10 @@ def test_driver():
     # Run Chrome in headless mode
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
-    driver = webdriver.Chrome(options=options)
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
     
-    #driver = webdriver.Chrome()
-    #driver.maximize_window()
+    driver = webdriver.Chrome(options=options)
     yield driver
     driver.quit()
 
