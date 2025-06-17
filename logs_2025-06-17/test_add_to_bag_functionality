@@ -1,0 +1,29 @@
+2025-06-17 23:50:46,411 - INFO - test_add_to_bag_functionality is started
+2025-06-17 23:50:47,131 - INFO - https://www.6pm.com/ is opened.
+2025-06-17 23:51:04,059 - INFO - User logged in.
+2025-06-17 23:51:12,760 - INFO - Added 1st sunglasses to the bag.
+2025-06-17 23:51:33,620 - ERROR - Message: Element '('xpath', "//div[@data-test-id='cartCheckoutWrapper']//h3")' not found!
+Stacktrace:
+	GetHandleVerifier [0x0x7ff72f6ccda5+78885]
+	GetHandleVerifier [0x0x7ff72f6cce00+78976]
+	(No symbol) [0x0x7ff72f489bca]
+	(No symbol) [0x0x7ff72f4e0766]
+	(No symbol) [0x0x7ff72f4e0a1c]
+	(No symbol) [0x0x7ff72f534467]
+	(No symbol) [0x0x7ff72f508bcf]
+	(No symbol) [0x0x7ff72f53122f]
+	(No symbol) [0x0x7ff72f508963]
+	(No symbol) [0x0x7ff72f4d16b1]
+	(No symbol) [0x0x7ff72f4d2443]
+	GetHandleVerifier [0x0x7ff72f9a4eed+3061101]
+	GetHandleVerifier [0x0x7ff72f99f33d+3037629]
+	GetHandleVerifier [0x0x7ff72f9be592+3165202]
+	GetHandleVerifier [0x0x7ff72f6e730e+186766]
+	GetHandleVerifier [0x0x7ff72f6eeb3f+217535]
+	GetHandleVerifier [0x0x7ff72f6d59b4+114740]
+	GetHandleVerifier [0x0x7ff72f6d5b69+115177]
+	GetHandleVerifier [0x0x7ff72f6bc368+10728]
+	BaseThreadInitThunk [0x0x7ffd5ae67344+20]
+	RtlUserThreadStart [0x0x7ffd5c0626b1+33]
+
+2025-06-17 23:51:34,117 - INFO - test_add_to_bag_functionality is finished

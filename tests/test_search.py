@@ -3,7 +3,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import config 
 import Testdata.data as data
-from Pages.home import Searche
+from Pages.searchPage import Searche
 
 
 def test_valid_data(test_driver, test_logger):
@@ -11,6 +11,7 @@ def test_valid_data(test_driver, test_logger):
     searche_obj = Searche(test_driver, test_logger)
     searche_obj.go_to_page(config.url)
     searche_obj.search_item()
+    searche_obj.filter_item()
     test_logger.info("Performed search")
 
     result_count = searche_obj.get_reported_result_count() 

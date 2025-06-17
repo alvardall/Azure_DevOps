@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 from Helpers.general_helpers import Helper
-import time
 
 class FavoritesPage(Helper):
     favorites_tab = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/header/div[1]/div[3]/div[3]/a')

@@ -21,6 +21,8 @@ class Searche(Helper):
     def search_item(self):
         self.find_and_send_keys(self.search_field, data.text_data)
         self.find_and_click(self.search_loop)
+        
+    def filter_item(self):    
         self.find_and_click(self.brand)
         self.find_and_click(self.remake_locator(self.brand_name_btn, data.brand))
         self.hover_element(self.price_btn) 
@@ -42,8 +44,7 @@ class Searche(Helper):
         return [el.lower() for el in brand] 
 
     def get_all_product_prices(self):
-        price_elements = self.find_all(self.products_elements)
-        print(f"price = : {price_elements}")  
+        price_elements = self.find_all(self.products_elements) 
         prices = []
         for el in price_elements:
             price_text = el.text.split("$")[1]  
