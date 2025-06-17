@@ -28,6 +28,33 @@ class Helper():
         elem = WebDriverWait(self.driver, sec).until(
             EC.presence_of_element_located(loc))
         return elem
+    
+    def find(self, loc, timeout=20, should_exist=True, get_text="", get_attribute=""):
+        try:
+            elem = WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located(loc),
+                message=f"Element '{loc}' not found!")
+        except Exception as e:
+            self.test_logger.error(e)
+            if should_exist:
+                raise Exception(e)
+            return False
+        if get_text:
+            self.test_logger.info(f"Element text: {elem.text}")
+            return elem.text
+        elif get_attribute:
+            return elem.get_attribute(get_attribute)
+        return elem
+
+    def find_all(self, loc, timeout=30):
+        try:
+            elements = WebDriverWait(self.driver, timeout).\
+                until(EC.presence_of_all_elements_located(loc),
+                      message=f"Elements '{loc}' not found!")
+        except Exception as e:
+            self.test_logger.error(e)
+            return False
+        return elements
 
     def find_and_click(self, locator, timeout=10):
         try:
@@ -57,8 +84,8 @@ class Helper():
         )
         return self.driver.find_elements(*locator)
     
-    #make locator dynamic
-    def make_locator(self, *args):
+    # make locator dynamic
+    def remake_locator(self, *args):
         return args[0][0], args[0][1] % args[1:]
     
 
