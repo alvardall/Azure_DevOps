@@ -1,7 +1,0 @@
-2025-06-18 01:15:54,141 - INFO - test_add_to_bag_functionality is started
-2025-06-18 01:16:04,547 - INFO - https://www.6pm.com/ is opened.
-2025-06-18 01:16:08,919 - INFO - User logged in.
-2025-06-18 01:16:16,552 - INFO - Added 1st sunglasses to the bag.
-2025-06-18 01:16:21,857 - INFO - Added 2nd sunglasses to the bag.
-2025-06-18 01:16:22,883 - INFO -  Add to Bag functionality test passed.
-2025-06-18 01:16:22,884 - INFO - test_add_to_bag_functionality is finished

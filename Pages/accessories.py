@@ -17,13 +17,12 @@ class AccessoriesPage(Helper):
         self.find_and_click(self.category_watches)
         self.test_logger.info("Selected Watches category.")
 
-    def clear_favorites(self):
-        
-        time.sleep(2)  # Wait for all items to load
+    def clear_favorites(self): 
+        time.sleep(2)  
         remove_btns = self.find_all(self.remove_buttons)
         for btn in remove_btns:
             btn.click()
-            time.sleep(0.5)  # Prevent click conflict
+            time.sleep(1) 
         self.test_logger.info(f"Cleared {len(remove_btns)} favorite items.")
 
     def add_favorites(self, count):

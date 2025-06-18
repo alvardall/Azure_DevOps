@@ -3,7 +3,7 @@ from Helpers.general_helpers import Helper
 
 class FavoritesPage(Helper):
     favorites_tab = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/header/div[1]/div[3]/div[3]/a')
-    favorite_count = (By.CSS_SELECTOR, "p.NQ-z > span") 
+    favorite_count = (By.XPATH, '//p[.//a[text()="Hearts"]]/span')
     
 
     def go_to_favorites(self):

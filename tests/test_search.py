@@ -6,7 +6,7 @@ import Testdata.data as data
 from Pages.searchPage import Searche
 
 
-def test_valid_data(test_driver, test_logger):
+def test_search_valid_data(test_driver, test_logger):
 
     searche_obj = Searche(test_driver, test_logger)
     searche_obj.go_to_page(config.url)

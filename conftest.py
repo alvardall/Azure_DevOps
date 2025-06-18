@@ -36,7 +36,7 @@ def test_logger(request):
     logger.setLevel(logging.INFO)
 
     logger.info(f'{test_name} is started')
-    yield logger  # Pause the fixture  and pass logger to test
+    yield logger  
     logger.info(f'{test_name} is finished')
 
 

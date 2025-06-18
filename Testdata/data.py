@@ -6,5 +6,6 @@ price_range = "$200.00 and Under"
 
 favorites_to_add = [
     "Watch Brand 1",
-    "Watch Brand 2"
+    "Watch Brand 2",
+    "Watch Brand 3"
 ]

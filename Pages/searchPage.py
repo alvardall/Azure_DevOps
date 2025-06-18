@@ -13,7 +13,7 @@ class Searche(Helper):
     brand_name_btn = (By.XPATH, "//ul[@aria-labelledby='brandNameFacet']//span[text()='%s']")
     price_filter = (By.XPATH, "//ul[@aria-labelledby='priceFacet']//span[text()='%s']") 
     color_filter = (By.XPATH, "//ul[@aria-labelledby='colorFacet']//span[text()='%s']")
-    result_text = (By.CSS_SELECTOR, "span.ft-z")
+    result_text = (By.XPATH, "//span[contains(text(), 'items found')]")
     visible_product_count = (By.XPATH, '//*[@id="products"]/article')
     products_elements = (By.CSS_SELECTOR, "#products > article > a")
     

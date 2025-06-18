@@ -2,9 +2,9 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import config
-from Pages.LoginPage import LoginPage
+from Pages.loginPage import LoginPage
 from Pages.accessories import AccessoriesPage
-from Pages.FavoritesPage import FavoritesPage
+from Pages.favoritesPage import FavoritesPage
 import Testdata.data as data
 
 
@@ -19,6 +19,7 @@ def test_favorites_feature(test_driver, test_logger):
     accessories_page.go_to_accessories()
     accessories_page.select_watches()
     accessories_page.clear_favorites()
+    test_logger.info("Previously selected favorites have been deleted")
     accessories_page.add_favorites(count=len(data.favorites_to_add))
 
     favorites_page.go_to_favorites()
